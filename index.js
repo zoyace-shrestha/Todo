@@ -10,7 +10,7 @@ function newElement() {
   } else {
     document.getElementById("myList").appendChild(li);
   }
-
+  document.getElementById("inputfield").value = "";
   var span = document.createElement("SPAN");
   var cls = document.createTextNode("\u00D7");
   span.className = "close";
