@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 10px;
+}
+
+.topic {
+  margin-bottom: -2px;
+}
+
+.header {
+  background-color: rgb(0, 136, 255);
+  color: aliceblue;
+  text-align: center;
+  padding: 15px 50px 60px 50px;
+}
+
+#inputfield {
+  margin: 0;
+  padding: 10px;
+  width: 75%;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  font-size: 15px;
+  float: left;
+}
+
+.addBtn {
+  position: relative;
+  width: 25%;
+  background-color: grey;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  float: left;
+}
+
+.addBtn:hover {
+  background-color: rgb(68, 68, 68);
+  color: rgb(178, 178, 178);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  background-color: grey;
+  padding: 15px 15px 15px 50px;
+  font-size: 15px;
+}
+
+ul li:nth-child(odd) {
+  background-color: rgb(168, 168, 168);
+}
+
+ul li:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+ul li.checked {
+  background-color: aliceblue;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  border-color: black;
+  content: "";
+  border-style: solid;
+  border-width: 0px 2px 2px 0px;
+  width: 10px;
+  top: 12px;
+  left: 20px;
+  height: 15px;
+  width: 8px;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px 20px 16px 20px;
+  transition: 0.2s;
+}
+
+.close:hover {
+  background-color: rgb(0, 136, 255);
+}
